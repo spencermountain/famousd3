@@ -1,0 +1,58 @@
+{
+  "name": "flare",
+  "children": [
+
+    {
+      "name": "analytics",
+      "children": [{
+          "name": "cluster",
+          "children": [{
+            "name": "hi mom",
+            "size": 3938
+          }, {
+            "name": "wooha",
+            "size": 3812
+          }, {
+            "name": "oh ya poppie",
+            "size": 6714
+          }, {
+            "name": "MergeEdge",
+            "size": 743
+          }]
+        },
+
+
+        {
+          "name": "graph",
+          "children": [{
+            "name": "oh no you di'int",
+            "size": 3534
+          }, {
+            "name": "salivate",
+            "size": 5731
+          }, {
+            "name": "wahoo",
+            "size": 7840
+          }, {
+            "name": "lala",
+            "size": 5914
+          }, {
+            "name": "single lawyer",
+            "size": 3416
+          }]
+        },
+
+
+        {
+          "name": "hardyboys",
+          "children": [{
+            "name": "nancy drew",
+            "size": 7074
+          }]
+        }
+
+
+      ]
+    }
+  ]
+}

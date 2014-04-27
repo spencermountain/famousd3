@@ -1,0 +1,19 @@
+{
+  "name": "flare",
+  "children": [{
+    "name": "cluster",
+    "children": [{
+      "name": "oh ya poppie",
+      "size": 743
+    }, {
+      "name": "happy lisa",
+      "size": 743
+    }]
+  }, {
+    "name": "hardyboys",
+    "children": [{
+      "name": "nancy drew",
+      "size": 7074
+    }]
+  }]
+}
