@@ -2,20 +2,12 @@ define(function(require, exports, module) {
 	var Engine = require('famous/core/Engine');
 	var Transform = require('famous/core/Transform');
 	var Modifier = require('famous/core/Modifier');
-	var Modifier = require('famous/core/Modifier');
 	var Surface = require('famous/core/Surface');
 	var ContainerSurface = require('famous/surfaces/ContainerSurface');
-	var SequentialLayout = require("famous/views/SequentialLayout");
-	var ImageSurface = require('famous/surfaces/ImageSurface');
-	var InputSurface = require('famous/surfaces/InputSurface');
 	var Transitionable = require('famous/transitions/Transitionable');
-	var Easing = require('famous/transitions/Easing');
 	var Scrollview = require('famous/views/Scrollview');
-	var GridLayout = require("famous/views/GridLayout");
 	var Timer = require('famous/utilities/Timer');
-	var SpringTransition = require('famous/transitions/SpringTransition');
 	var WallTransition = require('famous/transitions/WallTransition');
-	Transitionable.registerMethod('spring', SpringTransition);
 	Transitionable.registerMethod('wall', WallTransition);
 
 
