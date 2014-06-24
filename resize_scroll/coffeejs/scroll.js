@@ -13,10 +13,9 @@ define(function(require, exports, module) {
   surfaces = [];
   scroll.sequenceFrom(surfaces);
   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].each(function() {
-    var m, node, s, w;
-    w = 300;
+    var m, node, s;
     s = new Surface({
-      content: "Surface:",
+      content: "Surface",
       size: [void 0, void 0],
       properties: {
         border: "1px solid red",
@@ -25,17 +24,17 @@ define(function(require, exports, module) {
       }
     });
     m = new Modifier({
-      size: [w, 200]
+      size: [void 0, 200]
     });
     node = new RenderNode();
     node.add(m).add(s);
     s.pipe(scroll);
-    s.on("click", function() {
-      return m.setSize([w, 400], {
+    surfaces.push(node);
+    return s.on("click", function() {
+      return m.setSize([void 0, 400], {
         duration: 800
       });
     });
-    return surfaces.push(node);
   });
   return mainContext.add(scroll);
 });

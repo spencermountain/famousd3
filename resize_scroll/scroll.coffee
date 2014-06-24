@@ -1,3 +1,4 @@
+#a minimalist working resizable scrollview based on http://stackoverflow.com/questions/24354064/resizing-surfaces-in-a-famo-us-scrollview/24378591
 define (require, exports, module) ->
   Engine = require("famous/core/Engine")
   Surface = require("famous/core/Surface")
@@ -11,10 +12,10 @@ define (require, exports, module) ->
   scroll = new Scrollview()
   surfaces = []
   scroll.sequenceFrom surfaces
+
   [0..20].each ()->
-    w= 300
     s= new Surface({
-        content: "Surface:"
+        content: "Surface"
         size: [undefined, undefined]
         properties:
           border: "1px solid red"
@@ -22,17 +23,20 @@ define (require, exports, module) ->
           textAlign: "center"
     })
     m= new Modifier({
-      size:[w, 200]
+      size:[undefined, 200]
       })
     node = new RenderNode()
     node.add(m).add(s)
-    s.pipe scroll
+
+    s.pipe(scroll) #pipe with the surface
+
+    surfaces.push(node) #but push the rendernode
+
     s.on "click", ->
         m.setSize(
-          [w, 400],
+          [undefined, 400],
           { duration : 800 }
         )
-    surfaces.push(node)
 
   mainContext.add(scroll)
 
